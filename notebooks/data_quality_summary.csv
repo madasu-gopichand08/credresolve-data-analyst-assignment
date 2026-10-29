@@ -1,0 +1,7 @@
+table,issue,finding,action
+borrowers,Conflicting borrower profiles,"8,518 borrower IDs have multiple records",Preserve records; flag identity conflicts
+borrowers,Timestamp inconsistency,50.21% have updated_at earlier than created_at,Preserve timestamps; flag invalid ordering
+agents,Conflicting agent identities,"All 1,000 agent IDs have multiple employee codes, names, and vendors",Preserve records; exclude from agent-level ranking
+calls,Repeated call IDs with conflicting timestamps,11 call IDs have different timestamps,Preserve both records; investigate
+payments,Repeated payment IDs,14 repeated IDs consolidated after core-field checks,Retain consolidation rule and audit trail
+whatsapp_events,Exact duplicate rows,600 exact duplicates removed,Retain original source and cleaned table
