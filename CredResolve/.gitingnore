@@ -1,0 +1,24 @@
+# Original dataset files — keep local unless sharing is authorized
+dataset/*.csv
+
+# Local database backups and credentials
+*.sql.bak
+*.dump
+.env
+.env.*
+!.env.example
+credresolve_backup.sql
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
