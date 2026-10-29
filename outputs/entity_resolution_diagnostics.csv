@@ -1,0 +1,12 @@
+check,result
+Agent source rows,30000
+Distinct agent IDs,1000
+Agent IDs with >1 employee code,1000
+Agent IDs with >1 name,1000
+Agent IDs with >1 vendor,1000
+Borrower source rows,30600
+Distinct borrower IDs,11015
+Borrower IDs with >1 name,8185
+Borrower IDs with >1 phone,8399
+Accounts missing borrower ID,455
+Accounts with non-null unmatched borrower ID,2458

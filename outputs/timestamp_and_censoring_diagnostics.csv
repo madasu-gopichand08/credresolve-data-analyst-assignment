@@ -1,0 +1,5 @@
+check,result
+Status-history rows,60000
+Rows with recorded_at earlier than event_at under naive comparison,30191
+Rows with absolute naive lag > 6 hours,45107
+Promises with promised_date after 2026-08-08 cutoff,1242

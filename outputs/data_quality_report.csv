@@ -1,0 +1,11 @@
+table,issue,finding,action
+borrowers,Conflicting borrower profiles,"8,518 borrower IDs have multiple records",Preserve records; investigate identity conflicts
+borrowers,Timestamp inconsistency,50.21% of records have updated_at earlier than created_at,Preserve timestamps; flag invalid ordering
+agents,Conflicting agent identities,"All 1,000 agent IDs have multiple employee codes, names, and vendors",Preserve records; exclude from agent-level ranking
+calls,Repeated call IDs with conflicting timestamps,11 call IDs have different timestamps,Preserve both records; investigate
+payments,Repeated payment IDs,14 repeated IDs consolidated after core-field checks,Retain consolidation rule and audit trail
+accounts,Outstanding exceeds principal,"13,029 accounts flagged",Investigate business rules; do not change values
+accounts,Closed or written-off accounts with outstanding balances,"7,496 closed and 7,479 written-off accounts flagged",Confirm status and balance definitions
+accounts,Missing borrower ID,455 accounts have no borrower ID,Flag and investigate account mapping
+whatsapp_events,Exact duplicate rows,600 exact duplicates removed,Preserve original source and cleaning rule
+payments,Reversal reconciliation,"1,254 reversed payment records; 3,407 reused payment references; zero exact account-and-amount combinations shared between SUCCESS and REVERSED records.",Obtain a reliable original-transaction ID and reversal linkage. Do not estimate net recovery by subtracting all reversed amounts.

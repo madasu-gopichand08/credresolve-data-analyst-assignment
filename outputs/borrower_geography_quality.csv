@@ -1,0 +1,10 @@
+check,value
+Borrower source rows,30600
+Distinct borrower IDs,11015
+Borrower IDs with multiple name values,8185
+Borrower IDs with multiple phone values,8399
+Borrower IDs with multiple email values,8334
+Borrower IDs with multiple city values,8159
+Borrower IDs with multiple state values,8070
+Account rows missing borrower ID,455
+Account rows with non-null borrower ID absent from borrower table,2458

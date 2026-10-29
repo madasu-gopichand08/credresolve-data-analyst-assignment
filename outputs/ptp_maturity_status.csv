@@ -1,0 +1,9 @@
+is_mature_by_cutoff,status,promises,unique_accounts
+False,BROKEN,333,329
+False,CANCELLED,313,311
+False,KEPT,309,309
+False,OPEN,287,287
+True,BROKEN,4220,3983
+True,CANCELLED,4230,3952
+True,KEPT,4180,3896
+True,OPEN,4128,3850

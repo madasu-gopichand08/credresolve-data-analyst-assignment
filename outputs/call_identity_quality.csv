@@ -1,0 +1,6 @@
+check,value
+Raw call rows,91350
+Distinct non-missing call IDs,90000
+Repeated call-ID groups,1350
+Call IDs with conflicting core fields,79
+Rows represented in canonical call comparison,89921

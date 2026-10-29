@@ -1,0 +1,11 @@
+requested_dimension,available_fields,data_fitness,allowed_interpretation
+Portfolio mix / DPD / borrower segment,"accounts: loan_type, dpd, risk_segment; account-level payment summary",Available; account attributes are current snapshot only,Descriptive only; not causal
+Client,No client column found,Unavailable in supplied schema,Cannot test
+Geography,borrowers: city/state; field_visits: latitude/longitude,"Fields exist, but borrower IDs have conflicting city/state values",Quality diagnostic only until entity resolution
+Language,No language column found,Unavailable in supplied schema,Cannot test
+Agent / tenure,"agents, calls, call_attempts, agent_sessions","Agent IDs conflict on employee code, name, vendor and joined date",Do not rank agent/tenure performance
+Campaign,campaigns + daily_targeting,Targeting dates often fall outside campaign active calendar dates,Attribution requires reconciliation
+Channel,"calls, campaigns, agent_sessions, SMS and WhatsApp events, field_visits",Available as event labels; event definitions differ across tables,Descriptive event mix only
+Telephony vendor,calls.vendor_id + vendor_telephony,Available; duplicate call IDs and timezone mapping need review,Descriptive vendor comparison only
+Calling time,calls.event_at + calls.timezone,"Available, but timezone interpretation is assumed in the IST normalization below",Exploratory; validate source time semantics
+Attempt frequency,call_attempts.attempt_no and account_id,Available; attempt outcome is not a recovery outcome,Descriptive association only

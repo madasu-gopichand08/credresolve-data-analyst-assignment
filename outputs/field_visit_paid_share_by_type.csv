@@ -1,0 +1,5 @@
+visit_type,visits,accounts_visited,paid_outcome_visits,reported_paid_outcome_share_pct
+AFTER_HOURS,6192,5621,1012,16.34
+FIRST_VISIT,6275,5632,1048,16.7
+FOLLOWUP,6271,5673,1004,16.01
+NOTICE,6262,5663,1016,16.22

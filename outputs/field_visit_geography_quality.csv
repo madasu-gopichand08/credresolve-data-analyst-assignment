@@ -1,0 +1,4 @@
+check,value
+Field visit rows,25000
+Rows with both latitude and longitude,25000
+Distinct rounded coordinate pairs,24969

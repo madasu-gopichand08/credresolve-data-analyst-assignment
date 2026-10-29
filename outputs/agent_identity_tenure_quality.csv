@@ -1,0 +1,8 @@
+check,value
+Agent rows,30000
+Distinct agent IDs,1000
+Agent IDs with multiple employee_code values,1000
+Agent IDs with multiple agent_name values,1000
+Agent IDs with multiple vendor_id values,1000
+Agent IDs with multiple joined_at values,1000
+Agent IDs with multiple team values,1000

@@ -1,0 +1,6 @@
+finding,value,unit,classification,interpretation
+Gross successful payment amount,1315583964.64,INR,Observed fact,Gross successful payments; not verified net recovery
+Gross reversed payment amount,94666565.91,INR,Observed fact,Cannot be subtracted without matching original transactions
+Missing payment references,368.0,Payment records,Data quality issue,Reference-based reconciliation is incomplete
+Reused payment references,3407.0,References,Data quality issue,References span different accounts and amounts
+Reused references with multiple statuses,1681.0,References,Data quality issue,Cannot reliably identify original transactions and reversals

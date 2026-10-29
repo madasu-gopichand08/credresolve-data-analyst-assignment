@@ -1,0 +1,6 @@
+attempt_band,accounts,accounts_with_success,gross_successful_amount,median_attempt_count,account_payment_coverage_pct
+0,549,240,23490918.5,0.0,43.72
+1,2124,902,90392704.52,1.0,42.47
+2–3,10377,4615,457413570.46,3.0,44.47
+4–5,10553,4677,464358055.67,4.0,44.32
+6+,6397,2850,279928715.49,7.0,44.55

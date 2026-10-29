@@ -1,0 +1,8 @@
+table,rule,reason,status
+all tables,Remove exact duplicate rows,Avoid counting identical records more than once,Applied; original data preserved
+calls,Consolidate duplicate IDs differing only in agent_id,Retain the available agent ID when the other copy is missing it,Applied to 68 duplicate ID groups
+calls,Preserve records with conflicting timestamps,Avoid deleting potentially distinct events,11 call IDs retained for investigation
+payments,Consolidate duplicate IDs after core-field validation,Core payment fields matched across duplicate records,Applied to 14 duplicate payment IDs
+borrowers,Do not deduplicate by borrower_id alone,Multiple records have conflicting profile details,Preserved for identity resolution
+agents,Do not deduplicate by agent_id alone,Agent identity attributes conflict,Preserved for identity resolution
+accounts,Flag questionable balances and statuses,Business rules are not yet confirmed,Flags added; source values unchanged
