@@ -1,0 +1,9 @@
+**Finding: Transaction Reference Reuse**
+
+Analysis identified 3,407 transaction references associated with multiple payment IDs, representing 16.36% of unique non-missing transaction references. Across these reused references, 7,218 payment IDs were identified. The largest reuse group contained five payment IDs linked to different accounts and amounts.
+
+**Business impact:** Transaction references cannot safely be used as the sole key for deduplication or payment reconciliation. Incorrect handling could distort payment counts and recovery estimates.
+
+**Treatment:** Retain payment IDs as the current transaction-level identifier, preserve the original transaction references, and flag reused references for reconciliation. Do not remove records solely because their transaction references repeat.
+
+**Confidence:** High that reference reuse exists in the supplied data; the underlying cause and its effect on reported recovery remain unverified.
